@@ -1,0 +1,704 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6764208194490373 0.6707068665313675 0.3043142688136179 1.16135217005805
+  position 0.5386318603757717 0.6888000008824545 0.4940656103217712
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+DEF robot Robot {
+  translation 0 0.024 0
+  children [
+    DEF RF Transform {
+      translation 0.135 0 0.05
+      rotation 0 0 1 -1.57
+      children [
+        DEF RF0Shape Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF RF0 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "RF0"
+            }
+          ]
+          endPoint DEF RF0 Solid {
+            translation 1.57297e-05 0 0
+            rotation 0 0 -1 5.487189483500131e-07
+            children [
+              DEF half_L0 Transform {
+                translation 0 0.015 0
+                children [
+                  DEF L0 Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.01 0.03 0.01
+                    }
+                  }
+                  DEF L0 Transform {
+                    translation 0 0.015 0
+                    rotation 0 0 1 1.57
+                    children [
+                      DEF RF1Shape Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Cylinder {
+                          height 0.01
+                          radius 0.01
+                        }
+                      }
+                      DEF RF1 HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 1 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "RF1"
+                          }
+                        ]
+                        endPoint Solid {
+                          children [
+                            DEF half_L1 Transform {
+                              translation 0 0 0.035
+                              children [
+                                DEF L1 Transform {
+                                  translation 0 0 0.035
+                                  children [
+                                    DEF RF2Shape Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                        }
+                                      }
+                                      geometry Cylinder {
+                                        height 0.01
+                                        radius 0.01
+                                      }
+                                    }
+                                    DEF RF2 HingeJoint {
+                                      jointParameters HingeJointParameters {
+                                        axis 0 1 0
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "RF2"
+                                        }
+                                      ]
+                                      endPoint DEF RFL2 Solid {
+                                        children [
+                                          DEF half_L2 Transform {
+                                            translation 0.025 0 0
+                                            children [
+                                              DEF L2Shape Shape {
+                                                appearance Appearance {
+                                                  material Material {
+                                                  }
+                                                }
+                                                geometry Box {
+                                                  size 0.05 0.01 0.01
+                                                }
+                                              }
+                                              DEF L2 Transform {
+                                                translation 0.025 0 0
+                                                children [
+                                                  DEF half_L3 Transform {
+                                                    translation 0 -0.012 0
+                                                    children [
+                                                      DEF RFL3 Solid {
+                                                        children [
+                                                          DEF RFL3 Shape {
+                                                            appearance Appearance {
+                                                              material Material {
+                                                              }
+                                                            }
+                                                            geometry Box {
+                                                              size 0.01 0.024 0.01
+                                                            }
+                                                          }
+                                                        ]
+                                                        boundingObject USE RFL3
+                                                        physics Physics {
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                        boundingObject USE RF2Shape
+                                        physics Physics {
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                                DEF L1 Shape {
+                                  appearance Appearance {
+                                    material Material {
+                                    }
+                                  }
+                                  geometry Box {
+                                    size 0.01 0.01 0.07
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                          boundingObject USE RF1Shape
+                          physics Physics {
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            boundingObject USE RF0Shape
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF RH Transform {
+      translation -0.135 0 0.05
+      rotation 0 0 1 -1.57
+      children [
+        DEF RH0Shape Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF RH0 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "RH0"
+            }
+          ]
+          endPoint DEF RH0 Solid {
+            translation 1.57297e-05 0 0
+            rotation 0 0 -1 5.487189483500131e-07
+            children [
+              DEF half_L0 Transform {
+                translation 0 -0.015 0
+                children [
+                  DEF L0 Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.01 0.03 0.01
+                    }
+                  }
+                  DEF L0 Transform {
+                    translation 0 -0.015 0
+                    rotation 0 0 1 1.57
+                    children [
+                      DEF RH1Shape Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Cylinder {
+                          height 0.01
+                          radius 0.01
+                        }
+                      }
+                      DEF RH1 HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 1 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "RH1"
+                          }
+                        ]
+                        endPoint Solid {
+                          children [
+                            DEF half_L1 Transform {
+                              translation 0 0 0.035
+                              children [
+                                DEF L1 Transform {
+                                  translation 0 0 0.035
+                                  children [
+                                    DEF RH2Shape Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                        }
+                                      }
+                                      geometry Cylinder {
+                                        height 0.01
+                                        radius 0.01
+                                      }
+                                    }
+                                    DEF RH2 HingeJoint {
+                                      jointParameters HingeJointParameters {
+                                        axis 0 1 0
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "RH2"
+                                        }
+                                      ]
+                                      endPoint DEF RFL2 Solid {
+                                        children [
+                                          DEF half_L2 Transform {
+                                            translation 0.025 0 0
+                                            children [
+                                              DEF L2Shape Shape {
+                                                appearance Appearance {
+                                                  material Material {
+                                                  }
+                                                }
+                                                geometry Box {
+                                                  size 0.05 0.01 0.01
+                                                }
+                                              }
+                                              DEF L2 Transform {
+                                                translation 0.025 0 0
+                                                children [
+                                                  DEF half_L3 Transform {
+                                                    translation 0 -0.012 0
+                                                    children [
+                                                      DEF RFL3 Solid {
+                                                        children [
+                                                          DEF RFL3 Shape {
+                                                            appearance Appearance {
+                                                              material Material {
+                                                              }
+                                                            }
+                                                            geometry Box {
+                                                              size 0.01 0.024 0.01
+                                                            }
+                                                          }
+                                                        ]
+                                                        boundingObject USE RFL3
+                                                        physics Physics {
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                        boundingObject USE RH2Shape
+                                        physics Physics {
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                                DEF L1 Shape {
+                                  appearance Appearance {
+                                    material Material {
+                                    }
+                                  }
+                                  geometry Box {
+                                    size 0.01 0.01 0.07
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                          boundingObject USE RH1Shape
+                          physics Physics {
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            name "solid(2)"
+            boundingObject USE RH0Shape
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF LF Transform {
+      translation 0.135 0 -0.05
+      rotation 0 0 1 -1.57
+      children [
+        DEF LF0Shape Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF LF0 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "LF0"
+            }
+          ]
+          endPoint DEF LF0 Solid {
+            translation 1.57297e-05 0 0
+            rotation 0 0 -1 5.487189483500131e-07
+            children [
+              DEF LF_half_L0 Transform {
+                translation 0 0.015 0
+                children [
+                  DEF LF_L0 Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.01 0.03 0.01
+                    }
+                  }
+                  DEF LF_L0 Transform {
+                    translation 0 0.015 0
+                    rotation 0 0 1 1.57
+                    children [
+                      DEF LF1Shape Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Cylinder {
+                          height 0.01
+                          radius 0.01
+                        }
+                      }
+                      DEF LF1 HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 1 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "LF1"
+                          }
+                        ]
+                        endPoint Solid {
+                          children [
+                            DEF half_L1 Transform {
+                              translation 0 0 -0.035
+                              children [
+                                DEF LF_L1 Transform {
+                                  translation 0 0 -0.035
+                                  children [
+                                    DEF LF2Shape Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                        }
+                                      }
+                                      geometry Cylinder {
+                                        height 0.01
+                                        radius 0.01
+                                      }
+                                    }
+                                    DEF LF2 HingeJoint {
+                                      jointParameters HingeJointParameters {
+                                        axis 0 1 0
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "LF2"
+                                        }
+                                      ]
+                                      endPoint DEF LFL2 Solid {
+                                        children [
+                                          DEF LF_half_L2 Transform {
+                                            translation 0.025 0 0
+                                            children [
+                                              DEF LF_L2Shape Shape {
+                                                appearance Appearance {
+                                                  material Material {
+                                                  }
+                                                }
+                                                geometry Box {
+                                                  size 0.05 0.01 0.01
+                                                }
+                                              }
+                                              DEF LF_L2 Transform {
+                                                translation 0.025 0 0
+                                                children [
+                                                  DEF LF_half_L3 Transform {
+                                                    translation 0 -0.012 0
+                                                    children [
+                                                      DEF LFFL3 Solid {
+                                                        children [
+                                                          DEF LFL3 Shape {
+                                                            appearance Appearance {
+                                                              material Material {
+                                                              }
+                                                            }
+                                                            geometry Box {
+                                                              size 0.01 0.024 0.01
+                                                            }
+                                                          }
+                                                        ]
+                                                        boundingObject USE LFL3
+                                                        physics Physics {
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                        boundingObject USE LF2Shape
+                                        physics Physics {
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                                DEF LF_L1 Shape {
+                                  appearance Appearance {
+                                    material Material {
+                                    }
+                                  }
+                                  geometry Box {
+                                    size 0.01 0.01 0.07
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                          boundingObject USE LF1Shape
+                          physics Physics {
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            name "solid(1)"
+            boundingObject USE LF0Shape
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF LH Transform {
+      translation -0.135 0 -0.05
+      rotation 0 0 1 -1.57
+      children [
+        DEF LH0Shape Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF LH0 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+          }
+          device [
+            RotationalMotor {
+              name "LH0"
+            }
+          ]
+          endPoint DEF LH0 Solid {
+            translation 1.57297e-05 0 0
+            rotation 0 0 -1 5.487189483500131e-07
+            children [
+              DEF LH_half_L0 Transform {
+                translation 0 -0.015 0
+                children [
+                  DEF LH_L0 Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.01 0.03 0.01
+                    }
+                  }
+                  DEF LH_L0 Transform {
+                    translation 0 -0.015 0
+                    rotation 0 0 1 1.57
+                    children [
+                      DEF LH1Shape Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Cylinder {
+                          height 0.01
+                          radius 0.01
+                        }
+                      }
+                      DEF LH1 HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 1 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "LH1"
+                          }
+                        ]
+                        endPoint Solid {
+                          children [
+                            DEF half_L1 Transform {
+                              translation 0 0 -0.035
+                              children [
+                                DEF LH_L1 Transform {
+                                  translation 0 0 -0.035
+                                  children [
+                                    DEF LH2Shape Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                        }
+                                      }
+                                      geometry Cylinder {
+                                        height 0.01
+                                        radius 0.01
+                                      }
+                                    }
+                                    DEF LH2 HingeJoint {
+                                      jointParameters HingeJointParameters {
+                                        axis 0 1 0
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "LH2"
+                                        }
+                                      ]
+                                      endPoint DEF LHL2 Solid {
+                                        children [
+                                          DEF LH_half_L2 Transform {
+                                            translation 0.025 0 0
+                                            children [
+                                              DEF LH_L2Shape Shape {
+                                                appearance Appearance {
+                                                  material Material {
+                                                  }
+                                                }
+                                                geometry Box {
+                                                  size 0.05 0.01 0.01
+                                                }
+                                              }
+                                              DEF LH_L2 Transform {
+                                                translation 0.025 0 0
+                                                children [
+                                                  DEF LH_half_L3 Transform {
+                                                    translation 0 -0.012 0
+                                                    children [
+                                                      DEF LHL3 Solid {
+                                                        children [
+                                                          DEF LHL3 Shape {
+                                                            appearance Appearance {
+                                                              material Material {
+                                                              }
+                                                            }
+                                                            geometry Box {
+                                                              size 0.01 0.024 0.01
+                                                            }
+                                                          }
+                                                        ]
+                                                        boundingObject USE LHL3
+                                                        physics Physics {
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                        boundingObject USE LH2Shape
+                                        physics Physics {
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                                DEF LH_L1 Shape {
+                                  appearance Appearance {
+                                    material Material {
+                                    }
+                                  }
+                                  geometry Box {
+                                    size 0.01 0.01 0.07
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                          boundingObject USE LH1Shape
+                          physics Physics {
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            name "solid(3)"
+            boundingObject USE LH0Shape
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.774029 0
+      }
+      geometry Box {
+        size 0.26 0.03 0.1
+      }
+    }
+  ]
+  physics Physics {
+  }
+  controller "gecko_controller"
+}

@@ -1,0 +1,297 @@
+﻿  controller.c
+E:\my_project\controllers\webots_vs_0513\controller.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\easyMat.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\controller.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(67,1): error C2059: 语法错误:“enum [tag]”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2071: “webots_device_init”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2032: “webots_device_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2071: “set_motor_torque”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2032: “set_motor_torque”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2071: “set_motor_position”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2032: “set_motor_position”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2071: “get_motor_angle”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2032: “get_motor_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2071: “get_keyboard”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2032: “get_keyboard”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2071: “eulerAngleTypeDef”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2146: 语法错误: 缺少“;”(在标识符“get_IMU_Angle”的前面)
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2061: 语法错误: 标识符“get_IMU_Angle”
+E:\my_project\controllers\webots_vs_0513\controller.h(25,1): warning C4005: “max”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1289): message : 参见“max”的前一个定义
+E:\my_project\controllers\webots_vs_0513\controller.h(26,1): warning C4005: “min”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1290): message : 参见“min”的前一个定义
+E:\my_project\controllers\webots_vs_0513\controller.h(101,25): error C2071: “robot_init”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(101,25): error C2032: “robot_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(102,31): error C2071: “updateRobotState”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(102,31): error C2032: “updateRobotState”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(103,28): error C2071: “robot_control”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(103,28): error C2032: “robot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(104,42): error C2071: “update_IMU”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(104,42): error C2032: “update_IMU”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(105,42): error C2071: “update_foot_touch_sensor”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(105,42): error C2032: “update_foot_touch_sensor”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(106,42): error C2071: “update_vxd”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(106,42): error C2032: “update_vxd”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(107,42): error C2071: “phase_swap”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(107,42): error C2032: “phase_swap”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(108,42): error C2071: “update_theta”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(108,42): error C2032: “update_theta”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(109,42): error C2071: “update_clock_angle”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(109,42): error C2032: “update_clock_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(110,35): error C2032: “forwardKinematics”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(111,35): error C2032: “estimate_vxy”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(112,59): error C2032: “create_transJ”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(113,100): error C2032: “curve2D”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(114,111): error C2032: “curve3D”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(115,35): error C2032: “update_toe0_dtoe0”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(116,35): error C2032: “robot_trot”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(117,35): error C2032: “robot_static”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(118,35): error C2032: “robot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(118,35): error C2020: “robot_control”:“struct”成员重定义
+E:\my_project\controllers\webots_vs_0513\controller.h(119,35): error C2032: “robot_trot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.c(20,1): error C2061: 语法错误: 标识符“robotTypeDef”
+E:\my_project\controllers\webots_vs_0513\controller.c(27,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(27,10): error C2224: “.Tf”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(28,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(28,10): error C2224: “.Ts”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(29,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(29,10): error C2224: “.hd”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(30,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(30,10): error C2224: “.zh”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(31,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(31,10): error C2224: “.Kp”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(32,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(32,10): error C2224: “.Kdp”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(33,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(33,10): error C2224: “.Kr”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(34,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(34,10): error C2224: “.Kdr”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(35,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(35,10): error C2224: “.Kyaw”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(36,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(36,10): error C2224: “.Kdyaw”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(38,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(38,10): error C2224: “.Kdh”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(39,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(39,10): error C2224: “.Kvx”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(41,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(41,10): error C2224: “.kdx”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(42,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(42,10): error C2224: “.kz1”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(43,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(43,10): error C2224: “.kz2”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(44,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(44,10): error C2224: “.kdz”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(45,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(45,10): error C2224: “.ok”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(46,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(46,10): error C2224: “.dvx”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(47,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(47,10): error C2224: “.vxd_forward”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(48,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(48,10): error C2224: “.vxd”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(49,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(49,10): error C2224: “.vyd_right”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(50,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(50,10): error C2224: “.clockwise”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(51,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(51,10): error C2224: “.vx”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(52,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(52,10): error C2224: “.vy”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(53,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(53,10): error C2224: “.angular_velocity”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(54,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(54,10): error C2224: “.dclock_angle”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(55,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(55,10): error C2224: “.clock_flag”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(57,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(57,10): error C2224: “.body_long”的左侧必须具有结构/联合类型
+E:\my_project\controllers\webots_vs_0513\controller.c(58,9): error C2065: “robot”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\controller.c(58,9): fatal error C1003: 错误计数超过 100；正在停止编译
+  webotsInterface.c
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(67,1): error C2059: 语法错误:“enum [tag]”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2071: “webots_device_init”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2032: “webots_device_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2071: “set_motor_torque”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2032: “set_motor_torque”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2071: “set_motor_position”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2032: “set_motor_position”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2071: “get_motor_angle”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2032: “get_motor_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2071: “get_keyboard”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2032: “get_keyboard”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2071: “eulerAngleTypeDef”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2146: 语法错误: 缺少“;”(在标识符“get_IMU_Angle”的前面)
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2061: 语法错误: 标识符“get_IMU_Angle”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(31,19): error C2061: 语法错误: 标识符“get_IMU_Angle”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(31,19): error C2059: 语法错误:“;”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(31,33): error C2059: 语法错误:“<parameter-list>”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(65,64): error C2065: “POS_MOTION_NAMES”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(65,66): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(65,70): error C2198: “wb_robot_get_device”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(68,63): error C2065: “TOUCH_SENSOR_NAMES”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(68,65): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(68,66): error C2198: “wb_robot_get_device”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(89,11): error C2065: “RB0”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(90,11): error C2065: “RB1”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(91,11): error C2065: “RB2”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(93,11): error C2065: “LB0”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(94,11): error C2065: “LB1”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(95,11): error C2065: “LB2”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(89,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(90,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(91,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(93,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(94,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(95,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(115,11): error C2065: “RB0”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(116,11): error C2065: “RB1”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(117,11): error C2065: “RB2”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(119,11): error C2065: “LB0”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(120,11): error C2065: “LB1”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(121,11): error C2065: “LB2”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(115,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(116,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(117,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(119,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(120,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(121,1): error C2051: case 表达式不是常量
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(132,54): warning C4244: “return”: 从“double”转换到“char”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(133,19): error C2065: “RF”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(134,54): warning C4244: “return”: 从“double”转换到“char”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(135,19): error C2065: “RB”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(136,54): warning C4244: “return”: 从“double”转换到“char”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(137,19): error C2065: “LB”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(138,54): warning C4244: “return”: 从“double”转换到“char”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(145,19): error C2061: 语法错误: 标识符“get_IMU_Angle”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(145,19): error C2059: 语法错误:“;”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.c(145,33): error C2059: 语法错误:“<parameter-list>”
+  webots_vs_0513.c
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(67,1): error C2059: 语法错误:“enum [tag]”
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2071: “webots_device_init”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(104,33): error C2032: “webots_device_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2071: “set_motor_torque”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(105,72): error C2032: “set_motor_torque”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2071: “set_motor_position”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(106,73): error C2032: “set_motor_position”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2071: “get_motor_angle”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(107,58): error C2032: “get_motor_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2071: “get_keyboard”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(108,26): error C2032: “get_keyboard”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2071: “eulerAngleTypeDef”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2146: 语法错误: 缺少“;”(在标识符“get_IMU_Angle”的前面)
+E:\my_project\controllers\webots_vs_0513\webotsInterface.h(109,26): error C2061: 语法错误: 标识符“get_IMU_Angle”
+E:\my_project\controllers\webots_vs_0513\controller.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\visual stdio 2019\VC\Tools\MSVC\14.25.28610\include\stdbool.h(15,1): warning C4005: “bool”: 宏重定义
+D:\Webots\include\controller\c\webots\types.h(51): message : 参见“bool”的前一个定义
+E:\visual stdio 2019\VC\Tools\MSVC\14.25.28610\include\stdbool.h(16,1): warning C4005: “false”: 宏重定义
+D:\Webots\include\controller\c\webots\types.h(62): message : 参见“false”的前一个定义
+E:\visual stdio 2019\VC\Tools\MSVC\14.25.28610\include\stdbool.h(17,1): warning C4005: “true”: 宏重定义
+D:\Webots\include\controller\c\webots\types.h(56): message : 参见“true”的前一个定义
+E:\my_project\controllers\webots_vs_0513\easyMat.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\my_project\controllers\webots_vs_0513\controller.h(25,1): warning C4005: “max”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1289): message : 参见“max”的前一个定义
+E:\my_project\controllers\webots_vs_0513\controller.h(26,1): warning C4005: “min”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1290): message : 参见“min”的前一个定义
+E:\my_project\controllers\webots_vs_0513\controller.h(101,25): error C2071: “robot_init”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(101,25): error C2032: “robot_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(102,31): error C2071: “updateRobotState”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(102,31): error C2032: “updateRobotState”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(103,28): error C2071: “robot_control”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(103,28): error C2032: “robot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(104,42): error C2071: “update_IMU”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(104,42): error C2032: “update_IMU”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(105,42): error C2071: “update_foot_touch_sensor”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(105,42): error C2032: “update_foot_touch_sensor”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(106,42): error C2071: “update_vxd”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(106,42): error C2032: “update_vxd”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(107,42): error C2071: “phase_swap”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(107,42): error C2032: “phase_swap”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(108,42): error C2071: “update_theta”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(108,42): error C2032: “update_theta”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(109,42): error C2071: “update_clock_angle”: 非法的存储类
+E:\my_project\controllers\webots_vs_0513\controller.h(109,42): error C2032: “update_clock_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(110,35): error C2032: “forwardKinematics”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(111,35): error C2032: “estimate_vxy”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(112,59): error C2032: “create_transJ”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(113,100): error C2032: “curve2D”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(114,111): error C2032: “curve3D”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(115,35): error C2032: “update_toe0_dtoe0”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(116,35): error C2032: “robot_trot”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(117,35): error C2032: “robot_static”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(118,35): error C2032: “robot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\controller.h(118,35): error C2020: “robot_control”:“struct”成员重定义
+E:\my_project\controllers\webots_vs_0513\controller.h(119,35): error C2032: “robot_trot_control”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(30,26): error C2032: “webots_device_init”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(31,66): error C2032: “set_motor_position”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(32,41): error C2032: “joint_drive”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(33,53): error C2032: “motorangle_2_jointangle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(34,53): error C2032: “jointangle_2_motorangle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(35,45): error C2032: “IK_2_jointdrive”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(36,77): error C2032: “trajectory”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(37,51): error C2032: “get_motor_angle”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(38,46): error C2032: “is_foot_touching”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(39,19): error C2032: “get_keyboard”: 函数不能是 struct“<unnamed-tag>” 的成员
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(40,1): error C2061: 语法错误: 标识符“eulerAngleTypeDef”
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(41,14): error C2061: 语法错误: 标识符“robot”
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(41,14): error C2059: 语法错误:“;”
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(74,18): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(74,20): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(75,23): error C2065: “pos_sensor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(75,25): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(76,49): error C2065: “pos_sensor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(76,51): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(76,66): error C2198: “wb_position_sensor_enable”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(78,21): error C2065: “touch_sensor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(78,23): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(79,44): error C2065: “touch_sensor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(79,46): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(79,58): error C2198: “wb_touch_sensor_enable”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(81,9): error C2065: “IMU”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(82,32): error C2065: “IMU”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(92,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(92,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(92,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(92,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(93,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(93,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(93,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(93,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(94,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(94,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(94,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(94,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(96,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(96,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(96,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(96,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(97,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(97,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(97,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(97,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(98,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(98,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(98,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(98,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(100,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(100,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(100,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(100,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(101,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(101,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(101,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(101,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(102,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(102,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(102,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(102,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(104,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(104,47): error C2109: 下标要求数组或指针类型
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(104,58): warning C4244: “函数”: 从“double”转换到“WbDeviceTag”，可能丢失数据
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(104,58): error C2198: “wb_motor_set_position”: 用于调用的参数太少
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(105,45): error C2065: “motor”: 未声明的标识符
+E:\my_project\controllers\webots_vs_0513\webots_vs_0513.c(105,45): fatal error C1003: 错误计数超过 100；正在停止编译

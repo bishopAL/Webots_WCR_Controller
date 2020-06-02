@@ -1,0 +1,618 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  gravity 0 -10 0
+  basicTimeStep 10
+}
+Viewpoint {
+  orientation -0.025009223614780328 -0.9992918624080533 -0.028112496495867133 1.6882035408027454
+  position -0.887333178949394 0.21224891898947687 -0.056392767593183846
+  follow "robot"
+}
+Floor {
+  size 30 30
+}
+DEF robot Robot {
+  translation 0 0.152 0
+  children [
+    InertialUnit {
+    }
+    Accelerometer {
+    }
+    DEF RF Transform {
+      translation 0.12 0 0.085
+      rotation 1 0 0 1.5708
+      children [
+        DEF RF0_joint Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0.333333 0
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF RF0 HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "RF0"
+            }
+            DEF RF02 PositionSensor {
+              name "RF0 sensor"
+            }
+          ]
+          endPoint DEF RF0 Solid {
+            translation 2.9187318982826224e-05 9.21525815640355e-05 -0.0002798460302166754
+            rotation 0.40574360441946083 -0.10421542771147288 0.9080260305187395 2.039663628610303e-06
+            children [
+              Transform {
+                rotation 0 1 0 -0.7854
+                children [
+                  DEF RF1 HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0 1 0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "RF1"
+                      }
+                      PositionSensor {
+                        name "RF1 sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 3.902137606677861e-06 6.571238578279003e-08 0.050004386083356916
+                      children [
+                        DEF leg1 Shape {
+                          geometry Box {
+                            size 0.008 0.008 0.1
+                          }
+                        }
+                        Transform {
+                          translation 0 0 0.05
+                          rotation 0 1 0 1.5708
+                          children [
+                            DEF RF2 HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 1 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "RF2"
+                                }
+                                PositionSensor {
+                                  name "RF2 sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                children [
+                                  DEF leg2 Transform {
+                                    translation 0 0 0.05
+                                    children [
+                                      Transform {
+                                        translation 0 0 0.05
+                                        children [
+                                          Shape {
+                                            appearance Appearance {
+                                              material Material {
+                                                diffuseColor 0 0.333333 0
+                                              }
+                                            }
+                                            geometry Sphere {
+                                              radius 0.012
+                                            }
+                                          }
+                                          TouchSensor {
+                                            name "RF sensor"
+                                            boundingObject Sphere {
+                                              radius 0.012
+                                            }
+                                            physics Physics {
+                                            }
+                                            type "force-3d"
+                                          }
+                                        ]
+                                      }
+                                      DEF leg2 Shape {
+                                        geometry Box {
+                                          size 0.008 0.008 0.1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  DEF RF2 Shape {
+                                    appearance Appearance {
+                                      material Material {
+                                        diffuseColor 0 0.333333 0
+                                      }
+                                    }
+                                    geometry Cylinder {
+                                      height 0.01
+                                      radius 0.01
+                                    }
+                                  }
+                                ]
+                                boundingObject Cylinder {
+                                  height 0.01
+                                  radius 0.01
+                                }
+                                physics Physics {
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                      boundingObject USE leg1
+                      physics Physics {
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+            boundingObject USE RF0_joint
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF LF Transform {
+      translation 0.12 0 -0.085
+      rotation 1 0 0 1.5708
+      children [
+        DEF LF0_joint Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0.333333 0
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF LF0 HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "LF0"
+            }
+            PositionSensor {
+              name "LF0 sensor"
+            }
+          ]
+          endPoint DEF RF0 Solid {
+            translation -6.985816906723839e-06 1.067613876065472e-07 -0.00012781668963806974
+            rotation 0.6528383771179015 0.7390121966730363 0.16632205665683125 8.074119631740543e-06
+            children [
+              Transform {
+                rotation 0 1 0 -0.7854
+                children [
+                  DEF LF1 HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0 1 0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "LF1"
+                      }
+                      PositionSensor {
+                        name "LF1 sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 0 0 0.05000000000000001
+                      children [
+                        DEF leg1 Shape {
+                          geometry Box {
+                            size 0.008 0.008 0.1
+                          }
+                        }
+                        Transform {
+                          translation 0 0 0.05
+                          rotation 0 1 0 1.5708
+                          children [
+                            DEF LF2 HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 1 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "LF2"
+                                }
+                                PositionSensor {
+                                  name "LF2 sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                children [
+                                  DEF leg2 Transform {
+                                    translation 0 0 0.05
+                                    children [
+                                      Transform {
+                                        translation 0 0 0.05
+                                        children [
+                                          Shape {
+                                            appearance Appearance {
+                                              material Material {
+                                                diffuseColor 0 0.333333 0
+                                              }
+                                            }
+                                            geometry Sphere {
+                                              radius 0.012
+                                            }
+                                          }
+                                          TouchSensor {
+                                            name "LF sensor"
+                                            boundingObject Sphere {
+                                              radius 0.012
+                                            }
+                                            physics Physics {
+                                            }
+                                            type "force-3d"
+                                          }
+                                        ]
+                                      }
+                                      DEF leg2 Shape {
+                                        geometry Box {
+                                          size 0.008 0.008 0.1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  DEF RF2 Shape {
+                                    appearance Appearance {
+                                      material Material {
+                                        diffuseColor 0 0.333333 0
+                                      }
+                                    }
+                                    geometry Cylinder {
+                                      height 0.01
+                                      radius 0.01
+                                    }
+                                  }
+                                ]
+                                boundingObject Cylinder {
+                                  height 0.01
+                                  radius 0.01
+                                }
+                                physics Physics {
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                      boundingObject USE leg1
+                      physics Physics {
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(1)"
+            boundingObject USE LF0_joint
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF LH Transform {
+      translation -0.12 0 -0.085
+      rotation 1 0 0 1.5708
+      children [
+        DEF LH0_joint Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0.333333 0
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF LH0 HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "LH0"
+            }
+            DEF LH0 PositionSensor {
+              name "LH0 sensor"
+            }
+          ]
+          endPoint DEF LH0 Solid {
+            translation -6.73176178158652e-05 -3.5469004652047132e-06 -0.0003691605765154796
+            rotation 0.09394075209267724 -0.9955274267482122 -0.010013874791772112 5.077602107990452e-06
+            children [
+              Transform {
+                rotation 0 1 0 -0.7854
+                children [
+                  DEF LH0 HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0 1 0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "LH1"
+                      }
+                      PositionSensor {
+                        name "LH1 sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -8.673617379884035e-19 0 0.049999999999999996
+                      children [
+                        DEF leg1 Shape {
+                          geometry Box {
+                            size 0.008 0.008 0.1
+                          }
+                        }
+                        Transform {
+                          translation 0 0 0.05
+                          rotation 0 1 0 1.5708
+                          children [
+                            DEF LH2 HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 1 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "LH2"
+                                }
+                                PositionSensor {
+                                  name "LH2 sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                children [
+                                  DEF leg2 Transform {
+                                    translation 0 0 0.05
+                                    children [
+                                      Transform {
+                                        translation 0 0 0.05
+                                        children [
+                                          Shape {
+                                            appearance Appearance {
+                                              material Material {
+                                                diffuseColor 0 0.333333 0
+                                              }
+                                            }
+                                            geometry Sphere {
+                                              radius 0.012
+                                            }
+                                          }
+                                          TouchSensor {
+                                            name "LH sensor"
+                                            boundingObject Sphere {
+                                              radius 0.012
+                                            }
+                                            physics Physics {
+                                            }
+                                            type "force-3d"
+                                          }
+                                        ]
+                                      }
+                                      DEF leg2 Shape {
+                                        geometry Box {
+                                          size 0.008 0.008 0.1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  DEF RF2 Shape {
+                                    appearance Appearance {
+                                      material Material {
+                                        diffuseColor 0 0.333333 0
+                                      }
+                                    }
+                                    geometry Cylinder {
+                                      height 0.01
+                                      radius 0.01
+                                    }
+                                  }
+                                ]
+                                boundingObject Cylinder {
+                                  height 0.01
+                                  radius 0.01
+                                }
+                                physics Physics {
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                      boundingObject USE leg1
+                      physics Physics {
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(2)"
+            boundingObject USE LH0_joint
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF RH Transform {
+      translation -0.12 0 0.085
+      rotation 1 0 0 1.5708
+      children [
+        DEF RH0_joint Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0.333333 0
+            }
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.01
+          }
+        }
+        DEF RH0 HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "RH0"
+            }
+            DEF LH0 PositionSensor {
+              name "RH0 sensor"
+            }
+          ]
+          endPoint DEF RH0 Solid {
+            translation -3.2284427176065833e-06 1.355372145981964e-05 -2.729913503855474e-05
+            rotation -0.4014954850150501 0.9155781563248143 -0.022759946691145526 2.201744266422368e-06
+            children [
+              Transform {
+                rotation 0 1 0 -0.7854
+                children [
+                  DEF RH0 HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0 1 0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "RH1"
+                      }
+                      PositionSensor {
+                        name "RH1 sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -2.067741637634679e-11 0 0.05000000000000005
+                      children [
+                        DEF leg1 Shape {
+                          geometry Box {
+                            size 0.008 0.008 0.1
+                          }
+                        }
+                        Transform {
+                          translation 0 0 0.05
+                          rotation 0 1 0 1.5708
+                          children [
+                            DEF RH2 HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 1 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "RH2"
+                                }
+                                PositionSensor {
+                                  name "RH2 sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                children [
+                                  DEF leg2 Transform {
+                                    translation 0 0 0.05
+                                    children [
+                                      Transform {
+                                        translation 0 0 0.05
+                                        children [
+                                          Shape {
+                                            appearance Appearance {
+                                              material Material {
+                                                diffuseColor 0 0.333333 0
+                                              }
+                                            }
+                                            geometry Sphere {
+                                              radius 0.012
+                                            }
+                                          }
+                                          TouchSensor {
+                                            name "RH sensor"
+                                            boundingObject Sphere {
+                                              radius 0.012
+                                            }
+                                            physics Physics {
+                                            }
+                                            type "force-3d"
+                                          }
+                                        ]
+                                      }
+                                      DEF leg2 Shape {
+                                        geometry Box {
+                                          size 0.008 0.008 0.1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  DEF RH2 Shape {
+                                    appearance Appearance {
+                                      material Material {
+                                        diffuseColor 0 0.333333 0
+                                      }
+                                    }
+                                    geometry Cylinder {
+                                      height 0.01
+                                      radius 0.01
+                                    }
+                                  }
+                                ]
+                                boundingObject Cylinder {
+                                  height 0.01
+                                  radius 0.01
+                                }
+                                physics Physics {
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                      boundingObject USE leg1
+                      physics Physics {
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(3)"
+            boundingObject USE RH0_joint
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF body Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0.333333 1
+        }
+      }
+      geometry Box {
+        size 0.32 0.01 0.16
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.32 0.01 0.15
+  }
+  physics Physics {
+    mass 8
+  }
+  controller "legged_control_0413"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
