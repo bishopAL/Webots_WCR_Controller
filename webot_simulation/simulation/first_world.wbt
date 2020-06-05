@@ -33,6 +33,9 @@ DEF robot Robot {
             axis 0 1 0
           }
           device [
+            DEF RF0 PositionSensor {
+              name "RF0 sensor"
+            }
             RotationalMotor {
               name "RF0"
             }
@@ -700,5 +703,5 @@ DEF robot Robot {
   ]
   physics Physics {
   }
-  controller "gecko_controller"
+  controller "GeckoRunner"
 }

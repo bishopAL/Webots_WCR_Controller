@@ -12,10 +12,16 @@
 // All the webots classes are defined in the "webots" namespace
 using namespace webots;
 const char* MOTION_NAMES[4][3] = {
-   {"RF0","RF1", "RF2"},
-   {"RH0","RH1", "RH2"},
-   {"LF0","LF1", "LF2"},
-   {"LH0", "LH1","LH2"}
+   {"RF0", "RF1", "RF2"},
+   {"RH0", "RH1", "RH2"},
+   {"LF0", "LF1", "LF2"},
+   {"LH0", "LH1", "LH2"}
+};
+const char* SENSOR_NAMES[4][3] = {
+   {"RF0 sensor", "RF1 sensor", "RF2 sensor"},
+   {"RH0 sensor", "RH1 sensor", "RH2 sensor"},
+   {"LF0 sensor", "LF1 sensor", "LF2 sensor"},
+   {"LH0 sensor", "LH1 sensor", "LH2 sensor"}
 };
 Motor *limb_motors[4][3];
 // This is the main program of your controller.
