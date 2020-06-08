@@ -6,9 +6,9 @@
 # define LF 300
 # define LR 400
 
-const float L1=66;
-const float L2=40;
-const float L3=37;
+const float L1=70;
+const float L2=50;
+const float L3=24;
 using namespace std;
 class Motion
 {
@@ -21,17 +21,27 @@ public:
 	float length;
 	float height;
 	int t;
-		Motion()
-		{
+	float h;
+	float ran;
+	float hs;
+	int state;
+	Motion()
+	{
 		for(int i=0;i<4;i++)
 		{
-			origin_pos[i][0]=66;origin_pos[i][1]=40;origin_pos[i][2]=-37;
-			current_pos[i][0]=66;current_pos[i][1]=40;current_pos[i][2]=-37;
+			origin_pos[i][0]=70;origin_pos[i][1]=50;origin_pos[i][2]=-24;
+			current_pos[i][0]=70;current_pos[i][1]=50;current_pos[i][2]=-24;
 			a[i][0]=0;	a[i][1]=0;	a[i][2]=0;
 		}
-		step=20;
-		}
-		
+
+		step=30;
+		hs=0.3;//落地单腿距离
+		state=1;
+		h=0;
+		ran=0;
+		t=0;
+	}
+
 	void TriangleGait();
 	void setallcurrentposition();
 	void setcurrentposition(int ft);
@@ -41,7 +51,8 @@ public:
 	void Set_Distance(float a,float b,float c);
 	float Incident();
 	void Output_PWM(int fn);
+	void Outputall_PWM();
 	void PrintCoordinate();
 	float Decimal(float a);
-	float getNextStep();
+	void getNextStep();
 	};

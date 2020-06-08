@@ -69,4 +69,5 @@
 space :=
 space +=
 WEBOTS_HOME_PATH=$(subst $(space),\ ,$(strip $(subst \,/,$(WEBOTS_HOME))))
+CPP_SRC = GeckoRunner.cpp Motion.cpp
 include $(WEBOTS_HOME_PATH)/resources/Makefile.include

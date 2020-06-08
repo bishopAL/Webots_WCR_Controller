@@ -1,9 +1,10 @@
 #VRML_SIM R2020a utf8
 WorldInfo {
+  basicTimeStep 10
 }
 Viewpoint {
-  orientation -0.6764208194490373 0.6707068665313675 0.3043142688136179 1.16135217005805
-  position 0.5386318603757717 0.6888000008824545 0.4940656103217712
+  orientation -0.6309002533761455 0.4822896150669989 0.607751262843971 0.7985318536931301
+  position 0.23970825985848138 0.4441592951458101 0.6874260611070476
 }
 TexturedBackground {
 }
@@ -14,6 +15,21 @@ Floor {
 DEF robot Robot {
   translation 0 0.024 0
   children [
+    DEF body Solid {
+      children [
+        DEF body Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.26 0.03 0.1
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE body
+      physics Physics {
+      }
+    }
     DEF RF Transform {
       translation 0.135 0 0.05
       rotation 0 0 1 -1.57
@@ -75,6 +91,9 @@ DEF robot Robot {
                           axis 0 1 0
                         }
                         device [
+                          DEF RF1 PositionSensor {
+                            name "RF1 sensor"
+                          }
                           RotationalMotor {
                             name "RF1"
                           }
@@ -102,6 +121,9 @@ DEF robot Robot {
                                         axis 0 1 0
                                       }
                                       device [
+                                        DEF RF2 PositionSensor {
+                                          name "RF2 sensor"
+                                        }
                                         RotationalMotor {
                                           name "RF2"
                                         }
@@ -126,6 +148,14 @@ DEF robot Robot {
                                                   DEF half_L3 Transform {
                                                     translation 0 -0.012 0
                                                     children [
+                                                      DEF L3 Transform {
+                                                        translation 0 -0.012 0
+                                                        children [
+                                                          DEF RF TouchSensor {
+                                                            name "RF touch sensor"
+                                                          }
+                                                        ]
+                                                      }
                                                       DEF RFL3 Solid {
                                                         children [
                                                           DEF RFL3 Shape {
@@ -691,14 +721,6 @@ DEF robot Robot {
           }
         }
       ]
-    }
-    DEF body Shape {
-      appearance PBRAppearance {
-        baseColor 0 0.774029 0
-      }
-      geometry Box {
-        size 0.26 0.03 0.1
-      }
     }
   ]
   physics Physics {

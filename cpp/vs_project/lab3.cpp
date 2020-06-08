@@ -1,9 +1,10 @@
 #include<iostream>
 #include<math.h>
-#include<windows.h>//休眠头函数
+#include<unistd.h>//休眠头函数
 #include<ctime>
+#include <stdio.h>
+#include <sys/select.h>
 using namespace std;
-clock_t start,end;
 
 # define RF 100
 # define RR 200
@@ -324,28 +325,45 @@ public:
 };
 Motion XY;
 
+static void sleep_ms(unsigned int secs)
+
+{
+
+struct timeval tval;
+
+tval.tv_sec=secs/1000;
+
+tval.tv_usec=(secs*1000)%1000000;
+
+select(0,NULL,NULL,NULL,&tval);
+}
+
+
+
+
 int main()
 {
 	float b[4][3]={0};
 	XY.Set_Distance(0,30,30);
 	//XY.TriangleGait();
 	//XY.DiagonalGait();
-    LARGE_INTEGER freq;  
-    LARGE_INTEGER start_t, stop_t;  
-    double exe_time; 
-	QueryPerformanceFrequency(&freq);
+ //     LARGE_INTEGER freq;  
+ //     LARGE_INTEGER start_t, stop_t;  
+ //     double exe_time; 
+ //	 QueryPerformanceFrequency(&freq);
 
-	for(int t=0;t<290;t++)
+	for(int t=0;t<500;t++)
 	{	
-	    QueryPerformanceCounter(&start_t); 
+	//    QueryPerformanceCounter(&start_t); 
 		XY.getNextStep();
-		QueryPerformanceCounter(&stop_t);  
+	//	QueryPerformanceCounter(&stop_t);  
 		
-		exe_time = 1e3*(stop_t.QuadPart-start_t.QuadPart)/freq.QuadPart; 
+	//	exe_time = 1e3*(stop_t.QuadPart-start_t.QuadPart)/freq.QuadPart; 
 
-		cout<<"计算时间:"<<exe_time<<endl;
+	//	cout<<"计算时间:"<<exe_time<<endl;
 
-		Sleep(10-exe_time);
+	//	Sleep(10-exe_time);
+		sleep_ms(10);
 
 		for(int i=0;i<4;i++)
 		{
