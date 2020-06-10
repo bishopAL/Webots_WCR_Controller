@@ -1,10 +1,10 @@
 #VRML_SIM R2020a utf8
 WorldInfo {
-  basicTimeStep 10
+  basicTimeStep 50
 }
 Viewpoint {
-  orientation -0.6309002533761455 0.4822896150669989 0.607751262843971 0.7985318536931301
-  position 0.23970825985848138 0.4441592951458101 0.6874260611070476
+  orientation -0.2928381955542174 0.6229093609636042 0.7254169278755938 1.723670793489922
+  position 0.3125917510365802 1.041438127075744 0.5147520098143806
 }
 TexturedBackground {
 }
@@ -147,28 +147,27 @@ DEF robot Robot {
                                                 children [
                                                   DEF half_L3 Transform {
                                                     translation 0 -0.012 0
+                                                    rotation 1 0 0 4.692820414042842e-06
                                                     children [
-                                                      DEF L3 Transform {
-                                                        translation 0 -0.012 0
-                                                        children [
-                                                          DEF RF TouchSensor {
-                                                            name "RF touch sensor"
-                                                          }
-                                                        ]
-                                                      }
                                                       DEF RFL3 Solid {
                                                         children [
-                                                          DEF RFL3 Shape {
-                                                            appearance Appearance {
-                                                              material Material {
+                                                          DEF RF TouchSensor {
+                                                            children [
+                                                              DEF RFL3_shape Shape {
+                                                                appearance Appearance {
+                                                                  material Material {
+                                                                  }
+                                                                }
+                                                                geometry Box {
+                                                                  size 0.01 0.024 0.01
+                                                                }
                                                               }
-                                                            }
-                                                            geometry Box {
-                                                              size 0.01 0.024 0.01
-                                                            }
+                                                            ]
+                                                            name "RF touch sensor"
+                                                            boundingObject USE RFL3_shape
                                                           }
                                                         ]
-                                                        boundingObject USE RFL3
+                                                        boundingObject USE RFL3_shape
                                                         physics Physics {
                                                         }
                                                       }
@@ -326,17 +325,23 @@ DEF robot Robot {
                                                     children [
                                                       DEF RFL3 Solid {
                                                         children [
-                                                          DEF RFL3 Shape {
-                                                            appearance Appearance {
-                                                              material Material {
+                                                          DEF RH TouchSensor {
+                                                            children [
+                                                              DEF RHL3 Shape {
+                                                                appearance Appearance {
+                                                                  material Material {
+                                                                  }
+                                                                }
+                                                                geometry Box {
+                                                                  size 0.01 0.024 0.01
+                                                                }
                                                               }
-                                                            }
-                                                            geometry Box {
-                                                              size 0.01 0.024 0.01
-                                                            }
+                                                            ]
+                                                            name "RH touch sensor"
+                                                            boundingObject USE RHL3
                                                           }
                                                         ]
-                                                        boundingObject USE RFL3
+                                                        boundingObject USE RHL3
                                                         physics Physics {
                                                         }
                                                       }
@@ -386,7 +391,7 @@ DEF robot Robot {
     }
     DEF LF Transform {
       translation 0.135 0 -0.05
-      rotation 0 0 1 -1.57
+      rotation 0 0 -1 1.57
       children [
         DEF LF0Shape Shape {
           appearance Appearance {
@@ -495,17 +500,23 @@ DEF robot Robot {
                                                     children [
                                                       DEF LFFL3 Solid {
                                                         children [
-                                                          DEF LFL3 Shape {
-                                                            appearance Appearance {
-                                                              material Material {
+                                                          DEF LF TouchSensor {
+                                                            children [
+                                                              DEF LF_L3 Shape {
+                                                                appearance Appearance {
+                                                                  material Material {
+                                                                  }
+                                                                }
+                                                                geometry Box {
+                                                                  size 0.01 0.024 0.01
+                                                                }
                                                               }
-                                                            }
-                                                            geometry Box {
-                                                              size 0.01 0.024 0.01
-                                                            }
+                                                            ]
+                                                            name "LF touch sensor"
+                                                            boundingObject USE LF_L3
                                                           }
                                                         ]
-                                                        boundingObject USE LFL3
+                                                        boundingObject USE LF_L3
                                                         physics Physics {
                                                         }
                                                       }
@@ -664,17 +675,23 @@ DEF robot Robot {
                                                     children [
                                                       DEF LHL3 Solid {
                                                         children [
-                                                          DEF LHL3 Shape {
-                                                            appearance Appearance {
-                                                              material Material {
+                                                          DEF LH TouchSensor {
+                                                            children [
+                                                              DEF LH3 Shape {
+                                                                appearance Appearance {
+                                                                  material Material {
+                                                                  }
+                                                                }
+                                                                geometry Box {
+                                                                  size 0.01 0.024 0.01
+                                                                }
                                                               }
-                                                            }
-                                                            geometry Box {
-                                                              size 0.01 0.024 0.01
-                                                            }
+                                                            ]
+                                                            name "LH touch sensor"
+                                                            boundingObject USE LH3
                                                           }
                                                         ]
-                                                        boundingObject USE LHL3
+                                                        boundingObject USE LH3
                                                         physics Physics {
                                                         }
                                                       }
@@ -723,6 +740,9 @@ DEF robot Robot {
       ]
     }
   ]
+  boundingObject Box {
+    size 0.01 0.01 0.01
+  }
   physics Physics {
   }
   controller "GeckoRunner"
