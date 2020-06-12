@@ -1,6 +1,7 @@
 #include<iostream>
 #include<math.h>
 #include<ctime>
+
 # define RF 100
 # define RR 200
 # define LF 300
@@ -9,6 +10,7 @@
 const float L1=70;
 const float L2=50;
 const float L3=24;
+
 using namespace std;
 class Motion
 {
@@ -35,7 +37,7 @@ public:
 		}
 
 		step=30;
-		hs=0.3;//落地单腿距离
+		hs=1;//落地单次距离
 		state=1;
 		h=0;
 		ran=0;

@@ -1,5 +1,4 @@
 #include"Motion.hpp"
-
 	void Motion::getNextStep()
 	{
 
@@ -7,56 +6,56 @@
 		{	
 			cout<<"satae1"<<endl;
 			Detach(RF);moving(RR);moving(LF);moving(LR);t++;Outputall_PWM();
-			if(t>step){state=2;setallcurrentposition();t=1;ran=Incident();PrintCoordinate();}
+			if(t>step){state=2;setallcurrentposition();t=1;PrintCoordinate();}
 		}
 
 		else if (state==2)
 		{
 			cout<<"satae2"<<endl;
 			Adhesive(RF);t++;Outputall_PWM();
-			if(h>ran){state=3;setallcurrentposition();t=1;h=0;PrintCoordinate();}
+			//if(){state=3;setallcurrentposition();t=1;PrintCoordinate();}
 		}
 
 		else if (state==3)
 		{
 			cout<<"satae3"<<endl;
 			Detach(RR);moving(RF);moving(LF);moving(LR);t++;Outputall_PWM();
-			if(t>step){state=4;setallcurrentposition();t=0;ran=Incident();PrintCoordinate();}
+			if(t>step){state=4;setallcurrentposition();t=0;PrintCoordinate();}
 		}
 
 		else if (state==4)
 		{
 			cout<<"satae4"<<endl;
 			Adhesive(RR);t++;Outputall_PWM();
-			if(h>ran){state=5;setallcurrentposition();t=0;h=0;PrintCoordinate();}
+			//if(h>ran){state=5;setallcurrentposition();t=0;PrintCoordinate();}
 		}
 
 		else if (state==5)
 		{	
 			cout<<"satae5"<<endl;
 			Detach(LF);moving(RR);moving(RF);moving(LR);t++;Outputall_PWM();
-			if(t>step){state=6;setallcurrentposition();t=0;ran=Incident();PrintCoordinate();}
+			if(t>step){state=6;setallcurrentposition();t=0;PrintCoordinate();}
 		}
 
 		else if (state==6)
 		{
 			cout<<"satae6"<<endl;
 			Adhesive(LF);t++;Outputall_PWM();
-			if(h>ran){state=7;setallcurrentposition();t=0;h=0;PrintCoordinate();}
+			//if(h>ran){state=7;setallcurrentposition();t=0;PrintCoordinate();}
 		}
 
 		else if (state==7)
 		{
 			cout<<"satae7"<<endl;
-			Detach(LR);moving(RR);moving(LF);moving(RF);t++;Outputall_PWM();
-			if(t>step){state=8;setallcurrentposition();t=0;ran=Incident();PrintCoordinate();}
+			Detach(LR);moving(RR);moving(LF);moving(RF);t++;Outputall_PWM();PrintCoordinate();
+			if(t>step){state=8;setallcurrentposition();t=0;PrintCoordinate();}
 		}
 
 		else if (state==8)
 		{
 			cout<<"satae8"<<endl;
-			Adhesive(LR);t++;Outputall_PWM();Outputall_PWM();
-			if(h>ran){state=1;setallcurrentposition();t=0;h=0;PrintCoordinate();}
+			Adhesive(LR);t++;Outputall_PWM();
+			//if(h>ran){state=1;setallcurrentposition();t=0;h=0;PrintCoordinate();}
 		}
 
 	}
@@ -164,7 +163,7 @@
 
 	void Motion:: Detach(int fn)
 	//length x ����
-    //width y ǰ��
+           //width y ǰ��
 	{
 		int k=10;
 
@@ -251,13 +250,14 @@
 			height=c;
 		}
 
-	float Motion::Incident()
+	/*float Motion::Incident()         生成随机数
 		{
 		float ran=0;
 		srand(int (time(0)));
 		ran=rand()%10-5+height;
 		return ran;
 		}
+          */
 
 	void Motion::Outputall_PWM()
 		{

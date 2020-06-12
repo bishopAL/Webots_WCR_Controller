@@ -36,8 +36,11 @@ const char* TOUCH_SENSOR_NAMES[4] = {
 "RF touch sensor", "RH touch sensor", 
 "LF touch sensor", "LH touch sensor"
 };
+
+//extern float limb_force_sensor[4];
 Motor *limb_motors[4][3];
 TouchSensor *limb_force_sensor[4];
+
 //virtual enable (timeStep);
 // This is the main program of your controller.
 // It creates an instance of your Robot instance, launches its
@@ -62,7 +65,7 @@ select(0,NULL,NULL,NULL,&tval);
 int main(int argc, char **argv) {
 
   Motion motion_controller;
-  motion_controller.Set_Distance(0,40,30);
+  motion_controller.Set_Distance(0,30,30);
   // create the Robot instance.
   Robot *robot = new Robot();
   int timeStep = (int)robot->getBasicTimeStep();
@@ -79,11 +82,7 @@ int main(int argc, char **argv) {
       limb_motors[i][j] = robot->getMotor(MOTION_NAMES[i][j]);
     }
   }
-  
-  
- 
   // get the time step of the current world.
-
   // You should insert a getDevice-like function in order to get the
   // instance of a device of the robot. Something like:
   //  Motor *motor = robot->getMotor("motorname");
@@ -94,9 +93,11 @@ int main(int argc, char **argv) {
   while (robot->step(timeStep) != -1) {
   
   motion_controller.getNextStep();
+  
+  if (motion_controller.state==2||motion_controller.state==4||motion_controller.state==6||motion_controller.state==8)
+  {
   for(int i=0;i<4;i++)
   {  
-  // limb_force_sensor[i]->getValue() ;
     for(int j=0;j<3;j++)
     {
       limb_motors[i][j]->setPosition(motion_controller.a[i][j]);
@@ -104,6 +105,30 @@ int main(int argc, char **argv) {
     cout<<limb_force_sensor[i]->getValue()<<"    ";
   }
     cout<<endl;
+    
+    if (motion_controller.state==2 && limb_force_sensor[0]->getValue()==1)
+      {motion_controller.state=3;motion_controller.setallcurrentposition();motion_controller.t=0;motion_controller.PrintCoordinate();}
+     else if (motion_controller.state==4 && limb_force_sensor[1]->getValue()==1)
+      {motion_controller.state=5;motion_controller.setallcurrentposition();motion_controller.t=0;motion_controller.PrintCoordinate();}
+     else  if (motion_controller.state==6 && limb_force_sensor[2]->getValue()==1)
+      {motion_controller.state=7;motion_controller.setallcurrentposition();motion_controller.t=0;motion_controller.PrintCoordinate();}
+     else  if (motion_controller.state==8 && limb_force_sensor[3]->getValue()==1)
+      {motion_controller.state=1;motion_controller.setallcurrentposition();motion_controller.t=0;motion_controller.PrintCoordinate();}
+   
+   }
+   
+   if(motion_controller.state==1||motion_controller.state==3||motion_controller.state==5||motion_controller.state==7)
+  {
+  for(int i=0;i<4;i++)
+  {  
+    for(int j=0;j<3;j++)
+    {
+      limb_motors[i][j]->setPosition(motion_controller.a[i][j]);
+    }
+    cout<<limb_force_sensor[i]->getValue()<<"    ";
+  }
+    cout<<endl;
+   }
     //  motion_controller.Outputall_PWM();
     // Read the sensors:
     // Enter here functions to read sensor data, like:
